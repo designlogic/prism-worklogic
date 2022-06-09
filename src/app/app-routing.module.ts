@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DemoPageComponent } from './pages/demo-page/demo-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/deom', pathMatch: 'full' },
+  { path: '', redirectTo: '/demo', pathMatch: 'full' },
   { path: 'demo', component: DemoPageComponent },
 ];
 

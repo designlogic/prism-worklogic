@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  
+  
+  .search {
+    position: relative;
+    width: 250px;
+  }
+  
+  .search .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 216px;
+    color: gray;
+  }
+  
