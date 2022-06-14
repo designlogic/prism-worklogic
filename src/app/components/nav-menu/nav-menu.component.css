@@ -1,0 +1,34 @@
+#main-menu{
+    background-color: #444;
+    padding-top:10px;
+}
+
+.main-menu-item{
+    background-color: #444;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.main-menu-item.active{
+    background-color: #666;
+}
+
+.main-menu-item:hover{
+    background-color: #555;
+}
+
+
+#sub-menu{
+    background-color: #666;
+    padding-top:10px;
+}
+
+#sub-menu ul {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+#sub-menu li {
+padding-bottom: 5px;
+}
