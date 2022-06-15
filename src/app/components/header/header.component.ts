@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MenuItem } from '../../models/menuItem';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
+  public gridMenuItems: MenuItem[] = [
+
+    { Name: "Calendar", Icon: "fa-calendar" },
+    { Name: "User App", Icon: "fa-user" },
+    { Name: "Management", Icon: "fa-address-book" },
+    { Name: "Settings", Icon: "fa-gear" },
+    
+  ];
 
   constructor() { }
   

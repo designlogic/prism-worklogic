@@ -30,3 +30,30 @@
 .logo-green {
     color: #a7ce61;
 }
+
+
+.grid-sub-menu{
+    width: 400px;
+}
+
+.grid-sub-item{
+    height: 150px;
+    
+    background-color: white;
+}
+
+.grid-sub-item:hover{
+    
+    background-color: rgb(230, 230, 230);
+}
+
+.grid-sub-item > .menu-text{
+color:#666;
+}
+
+
+
+.grid-sub-item .fa-circle{
+  color:rgb(196, 196, 196);
+}
+
