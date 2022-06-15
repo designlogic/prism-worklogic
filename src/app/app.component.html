@@ -1,8 +1,8 @@
 <app-header [notificationCount]=8></app-header>
 <div class="container-fluid p-0">
   <div class="d-flex flex-row min-vh-100">
-     <app-nav-menu class="d-none d-md-block"></app-nav-menu>
-      <div class="flex-fill p-3 px-4">
+     <app-nav-menu #menu class="d-none d-md-block"></app-nav-menu>
+      <div class="flex-fill p-3 px-4" (click)="menu.hideSubMenu()">
         <router-outlet></router-outlet>
       </div>
   </div>

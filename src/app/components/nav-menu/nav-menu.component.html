@@ -1,152 +1,18 @@
 <div class="d-flex">
-
-
     <nav id="main-menu" class="min-vh-100 d-flex flex-column">
 
-        <div class="main-menu-item">
+     <div *ngFor="let item of menuItems" class="main-menu-item" [class.active]="item.IsActive" (click)="showSubMenuItem(item)">
             <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-home fa-lg"></i>
-                <span class="menu-text">Home</span>
+                <i [className]="'fa fa-lg ' + item.Icon"></i>
+                <span class="menu-text pt-2 user-select-none">{{item.Name}}</span>
             </div>
-        </div>
-
-        <div class="main-menu-item active">
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-users fa-lg"></i>
-                <span class="menu-text">Clients</span>
-            </div>
-        </div>
-
-        <div class="main-menu-item">
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-table fa-lg"></i>
-                <span class="menu-text">Performance</span>
-            </div>
-        </div>
+        </div> 
     </nav>
 
-    <div id="sub-menu">
+    <div id="sub-menu" *ngIf="showSubMenu">
+        <button class="btn ps-3" (click)="hideSubMenu()"><i class="fa fa-close"></i></button>
         <ul>
-            <li>Overview</li>
-            <li>Client Details</li>
-            <li>New Client Dashboard</li>
-            <li>Inovices</li>
+            <li class="user-select-none" *ngFor="let subItem of selectedMenuItem!.Children">{{subItem.Name}}</li>
         </ul>
-
-        <!-- <ul class="list-group list-group-flush bg-transparent">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
-          </ul> -->
     </div>
 </div>
-
-
-
-<!-- <nav class="bg-light min-vh-100">
-    <ul class="list-group list-group-flush pt-2">
-        
-        <li class="list-group-item bg-light">
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-table fa-lg"></i>
-                <span class="menu-text">Item 1</span>
-            </div>
-        </li>
-        <li class="list-group-item active">
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-laptop fa-lg"></i>
-                <span class="menu-text">Item 2</span>
-            </div>
-        </li>
-        <li class="list-group-item bg-light">
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa fa-heart fa-lg"></i>
-                <span class="menu-text">Item 3</span>
-            </div>
-        </li>
-    </ul>
-</nav> -->
-
-
-
-<!-- 
-<div class="container-fluid">
-    <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-        <div class="position-sticky pt-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <span data-feather="home"></span>
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Orders
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart"></span>
-                Products
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="users"></span>
-                Customers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="bar-chart-2"></span>
-                Reports
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="layers"></span>
-                Integrations
-              </a>
-            </li>
-          </ul>
-  
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Current month
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Last quarter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Social engagement
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Year-end sale
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      </div> -->

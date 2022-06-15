@@ -1,34 +1,49 @@
-#main-menu{
+#main-menu {
     background-color: #444;
-    padding-top:10px;
+    padding-top: 10px;
 }
 
-.main-menu-item{
+.main-menu-item {
     background-color: #444;
-    padding: 10px 20px;
+    padding: 15px;
+    padding-top: 20px;
     color: white;
     cursor: pointer;
 }
 
-.main-menu-item.active{
-    background-color: #666;
-}
-
-.main-menu-item:hover{
+.main-menu-item:hover {
     background-color: #555;
 }
 
-
-#sub-menu{
+.main-menu-item.active {
     background-color: #666;
-    padding-top:10px;
+}
+
+#sub-menu {
+    background-color: #666;
+    padding-top: 10px;
+    position: absolute;
+    left:92px;
+    height: 100%;
+    width:200px;
 }
 
 #sub-menu ul {
+    padding: 0px;
     list-style-type: none;
-    padding: 10px 20px;
+    font-size: smaller;
+}
+
+#sub-menu .btn {
+    color: white;
 }
 
 #sub-menu li {
-padding-bottom: 5px;
+    padding: 7px 0px 7px 15px;
+    color: white;
+}
+
+#sub-menu li:hover {
+    background-color: #777;
+    cursor: pointer;
 }
