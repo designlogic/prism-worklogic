@@ -4,7 +4,7 @@
      <div *ngFor="let item of menuItems" class="main-menu-item" [class.active]="item.IsActive" (click)="showSubMenuItem(item)">
             <div class="d-flex flex-column align-items-center">
                 <i [className]="'fa fa-lg ' + item.Icon"></i>
-                <span class="menu-text pt-2 user-select-none">{{item.Name}}</span>
+                <span class="main-menu-text pt-2 user-select-none">{{item.Name}}</span>
             </div>
         </div> 
     </nav>

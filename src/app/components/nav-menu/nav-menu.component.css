@@ -1,6 +1,5 @@
 #main-menu {
     background-color: #444;
-    padding-top: 10px;
 }
 
 .main-menu-item {
@@ -19,13 +18,18 @@
     background-color: #666;
 }
 
+.main-menu-text {
+    font-size: 10px;
+    padding-top: 3px;
+}
+
 #sub-menu {
     background-color: #666;
     padding-top: 10px;
     position: absolute;
-    left:92px;
+    left: 92px;
     height: 100%;
-    width:200px;
+    width: 200px;
 }
 
 #sub-menu ul {

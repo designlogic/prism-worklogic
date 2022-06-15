@@ -1,0 +1,32 @@
+.header-icon {
+    cursor: pointer;
+}
+
+.badge-count {
+    position: relative;
+    top: -7px;
+    left: -12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 9px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+.search {
+    position: relative;
+    width: 250px;
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 216px;
+    color: gray;
+}
+
+.logo-green {
+    color: #a7ce61;
+}
