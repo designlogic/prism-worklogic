@@ -10,7 +10,7 @@
     </nav>
 
     <div id="sub-menu" *ngIf="showSubMenu">
-        <button class="btn ps-3" (click)="hideSubMenu()"><i class="fa fa-close"></i></button>
+        <button type="button" class="btn-close btn-close-white ms-3 mt-1" (click)="hideSubMenu()" aria-label="Close"></button>
         <ul>
             <li class="user-select-none" *ngFor="let subItem of selectedMenuItem!.Children">{{subItem.Name}}</li>
         </ul>
