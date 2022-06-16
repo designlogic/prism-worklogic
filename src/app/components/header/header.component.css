@@ -32,13 +32,18 @@
 }
 
 
+
 .grid-sub-menu{
     width: 400px;
 }
 
+.grid-sub-menu.dropdown-menu{
+    background-color: transparent;
+    border:none;
+}
+
 .grid-sub-item{
-    height: 150px;
-    
+    height: 150px;    
     background-color: white;
 }
 
