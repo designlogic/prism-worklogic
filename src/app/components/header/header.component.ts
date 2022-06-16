@@ -17,6 +17,32 @@ export class HeaderComponent implements OnInit {
     
   ];
 
+  public userMenuItems: MenuItem[] = [
+
+    { Name: "Calendar", Icon: "fa-calendar" },
+    { Name: "User App", Icon: "fa-user" },
+    { Name: "Management", Icon: "fa-address-book" },
+    { Name: "Settings", Icon: "fa-gear" },
+    
+  ];
+
+  public helpMenuItems: MenuItem[] = [
+
+    { Name: "Calendar", Icon: "fa-calendar" },
+    { Name: "User App", Icon: "fa-user" },
+    { Name: "Management", Icon: "fa-address-book" },
+    { Name: "Settings", Icon: "fa-gear" },
+  ];
+
+  public notificationMenuItems: MenuItem[] = [
+
+    { Name: "Calendar", Icon: "fa-calendar" },
+    { Name: "User App", Icon: "fa-user" },
+    { Name: "Management", Icon: "fa-address-book" },
+    { Name: "Settings", Icon: "fa-gear" },
+  ];
+
+
   constructor() { }
   
   @Input() notificationCount: number = 0;
